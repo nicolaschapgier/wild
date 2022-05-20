@@ -1,0 +1,151 @@
+body {
+    background-color: #4f6fb6;
+  }
+  
+  header {
+    display: flex;
+  }
+  
+  section {
+    padding: 20px;
+  }
+  
+  header ul {
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+    margin: 50px;
+    padding-left: 40%;
+    font-weight: bold;
+    word-spacing: 2px;
+  }
+  
+  ul li {
+    list-style: none;
+  }
+  
+  ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+  }
+  
+  /*home*/
+  
+  .hero {
+    margin-top: 10px;
+    background-image: url("assets/royaume.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
+    height: 600px;
+  }
+  
+  h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Odibee Sans", cursive;
+    font-size: 45px;
+    color: #666;
+    text-shadow: 1px 1px #ad9d9d;
+  }
+  
+  .about {
+    display: flex;
+    background-color: #666;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .about p {
+    text-align: justify;
+    padding: 10px;
+  }
+  
+  h2 {
+    font-family: "Odibee Sans", cursive;
+    font-size: 40px;
+    text-align: center;
+    color: #ad9d9d;
+  }
+  
+  .content {
+    text-align: center;
+  }
+  
+  /*royal family*/
+  
+  .royalfam {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .royalfam div {
+    flex: 1 1 0;
+  }
+  
+  h3 {
+    padding: 30px;
+    background-color: rgb(163, 33, 33);
+    text-transform: uppercase;
+    border: 2px solid rgb(163, 33, 33);
+    border-radius: 10px;
+  }
+  
+  .font {
+    font-size: 32px;
+    color: white;
+    font-family: "Times New Roman", Times, serif;
+  }
+  
+  #ugly {
+    color: rgb(163, 33, 33);
+    font-family: "Macondo";
+  }
+  
+  /*royal's asets*/
+  .assetscontent {
+    display: flex;
+    justify-content: space-between;
+  }
+  table {
+    text-align: center;
+    justify-content: center;
+    border: 2px solid bisque;
+  }
+  
+  thead th {
+    color: green;
+    text-transform: uppercase;
+  }
+  
+  th {
+    background-color: white;
+    padding: 20px;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+  }
+  tbody {
+    color: white;
+  }
+  
+  td {
+    background-color: rgb(63, 56, 56);
+    padding: 10px;
+    text-align: left;
+  }
+  .opacity td {
+    opacity: 0.8;
+  }
+  
+  .perdu td {
+    background-color: rgb(163, 33, 33);
+  }
+  
+  .hidenseek .opacity {
+    opacity: 0.4;
+  }
+  
+  .hidenseek th {
+    padding: 10px;
+  }
+  
