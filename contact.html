@@ -8,13 +8,15 @@
   </head>
   <body>
     <header>
-      <img
-        src="assets/logo-belier.png"
-        alt="logo"
-        class="logo"
-        width="300px"
-        height="200px"
-      />
+      <a href="https://fr.wikipedia.org/wiki/Chrysomallos" target="_blank">
+        <img
+          src="assets/logo-belier.png"
+          alt="logo"
+          class="logo"
+          width="150px"
+          height="100px"
+        />
+      </a>
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="royal-family.html">Royal Family</a></li>
@@ -22,9 +24,51 @@
         <li><a href="contact.html">Contact Us</a></li>
       </ul>
     </header>
-    <p>
-      Fill in the form below to contact the Royal Kingdom
-    </p>
-    Name... Email... Message... Submit...
+      <section class="contenttournois">
+        <h1>Inscription tournois Pokémon Go</h1>
+        <hr />
+          <p>
+            N'hésitez plus et inscrivez vous au grand tournois Pokémon Go de
+            Colchide. Venez vous affronter avec votre appareil Opple ou Somsung du
+            siècle dernier et tentez de remporter un réfrégérateur dernière
+            génération (promis cela sera utile pour stoquer votre gibier dans les
+            années à venir).
+          </p>
+        <hr />
+        <p>
+          De plus lors du tournois nous sommes susceptible de retrouve la fameuse
+          sandale perdu (et peut-être Arthur). Celui ou celle qui revient avec
+          l'un ou l'autre se verra offrir 50 subs sur sa chaine Twitch.
+        </p>
+        <hr />
+        <p>
+          Colchidien, colchidienne, à vos Smartphones !
+        </p>
+        <hr />
+        <p>
+          S'il vous plait, ne vous perdez pas
+        </p>
+      </section>
+    <section>
+      <form class="contactForm">
+        <label for="name">Nom :</label><br />
+        <input type="text" id="name" name="name" /><br /><br />
+        <label for="firstname">Prénom :</label><br/>
+        <input type="texte" id="firstname" name="firstname"/><br/><br/>
+        <label for="email">Adresse électronique antique :</label><br />
+        <input type="email" id="email" name="email" /><br /><br />
+        <label for="message">Combien serez-vous au barbecue du roi organisé le soir des résultats :</label><br />
+        <textarea id="message" name="message"></textarea></br><br />
+        <label for="mesage">Pensez vous que Colchidien/Colchidienne est une bonne situation ?</label><br/>
+        <textarea id="message" name="message"></textarea>
+        <br /><br />
+        <button id="test" type="submit" value="submit">
+          Envoyer ma confirmation de participation
+        </button>
+      </form>
+    </section>
+
+    <script src="script.js"></script>
+
   </body>
 </html>
