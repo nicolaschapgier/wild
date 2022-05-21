@@ -182,7 +182,7 @@ hr {
   background-color: white;
 }
 
-.contactForm {
+#contactForm {
   background-color: grey;
   padding: 30px;
   border: 10px ridge rgb(162, 255, 112);
