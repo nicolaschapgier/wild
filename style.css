@@ -28,11 +28,6 @@ ul li a {
   text-transform: uppercase;
   color: white;
 }
-
-ul li a:visited {
-  color: purple;
-}
-
 ul li a:hover {
   color: rgb(182, 160, 35);
 }
@@ -63,12 +58,12 @@ h1 {
   display: flex;
   background-color: #666;
   padding: 20px;
-  text-align: center;
 }
 
 .about p {
   text-align: justify;
   padding: 10px;
+  flex: 1;
 }
 
 h2 {
@@ -115,7 +110,8 @@ h3 {
 /*royal's asets*/
 .assetscontent {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
 }
 table {
   text-align: center;
@@ -153,7 +149,7 @@ td {
 }
 
 .hidenseek .opacity {
-  opacity: 0.4;
+  opacity: 0.8;
 }
 
 .hidenseek th {
@@ -170,9 +166,22 @@ tfoot td {
 /*contact us*/
 
 .contenttournois {
-  text-align: center;
-  margin: auto;
-  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+  font-family: "Luxurious Roman", cursive;
+}
+
+.contenttournois p {
+  width: 80%;
+}
+
+.note {
+  text-align: right;
+  font-family: "Gloria Hallelujah", cursive;
+  font-style: italic;
+  font-size: 12px;
 }
 
 hr {
@@ -209,7 +218,7 @@ button {
   color: white;
   font-weight: bold;
   text-transform: uppercase;
-  padding: 20px 50px;
+  padding: 30px 50px;
   margin: 10px 4px;
   border: 1px solid white;
   border-radius: 30px;
@@ -226,3 +235,93 @@ button:hover {
   transform-origin: left;
   background-position: left;
 }
+
+/*media navbar*/
+@media screen and (max-width: 612px) {
+  header,
+  header ul,
+  .about {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  h1,
+  h2,
+  .font,
+  h4 {
+    font-size: 25px;
+  }
+}
+
+/*media royal family*/
+@media screen and (max-width: 1020px) {
+  .royalfam {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 370px) {
+  .royalfam img {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+/*media des assets*/
+
+@media screen and (max-width: 1400px) {
+  .assetscontent {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+@media screen and (max-width: 534px) {
+  thead th {
+    font-size: 15px;
+  }
+
+  th {
+    padding: 10px;
+    font-size: 10px;
+  }
+
+  td {
+    padding: 5px;
+    font-size: 10px;
+  }
+
+  .hidenseek th {
+    padding: 5px;
+  }
+}
+
+/*media contact us*/
+@media screen and (max-width: 600px) {
+  .contenttournois {
+    font-size: 16px;
+  }
+
+  label {
+    font-size: 16px;
+  }
+
+  input,
+  textarea {
+    width: 80%;
+  }
+  button:hover {
+    transform: scaleX(1) scaleY(1);
+  }
+  button {
+    padding: 3% 5%;
+    margin: 5% 5%;
+  }
+}
+
+
+/*haut droit bas gauche
+1 : applique le même écart aux 4 côtés.
+2 : 1er haut et en bas, 2ième droite et gauche.
+3 : 1er écart en haut, 2ième à droite et à gauche, 3ième en bas.
+4 : Haut Droit Bas Gauche
