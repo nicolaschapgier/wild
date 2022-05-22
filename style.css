@@ -1,151 +1,327 @@
 body {
-    background-color: #4f6fb6;
-  }
-  
-  header {
-    display: flex;
-  }
-  
-  section {
-    padding: 20px;
-  }
-  
-  header ul {
-    display: flex;
-    flex: 1;
-    justify-content: space-around;
-    margin: 50px;
-    padding-left: 40%;
-    font-weight: bold;
-    word-spacing: 2px;
-  }
-  
-  ul li {
-    list-style: none;
-  }
-  
-  ul li a {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: white;
-  }
-  
-  /*home*/
-  
-  .hero {
-    margin-top: 10px;
-    background-image: url("assets/royaume.jpg");
-    background-size: cover;
-    background-position: 50% 50%;
-    height: 600px;
-  }
-  
-  h1 {
-    text-align: center;
-    text-transform: uppercase;
-    font-family: "Odibee Sans", cursive;
-    font-size: 45px;
-    color: #666;
-    text-shadow: 1px 1px #ad9d9d;
-  }
-  
+  background-color: #4f6fb6;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+section {
+  padding: 20px;
+}
+
+header ul {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+
+ul li {
+  padding: 20px;
+  list-style: none;
+}
+
+ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+}
+ul li a:hover {
+  color: rgb(182, 160, 35);
+}
+ul li a:active {
+  color: pink;
+}
+
+/*home*/
+
+.hero {
+  margin-top: 10px;
+  background-image: url("assets/royaume.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+  height: 600px;
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Odibee Sans", cursive;
+  font-size: 45px;
+  color: rgb(59, 59, 59);
+  text-shadow: 1px 1px #ad9d9d;
+}
+
+.about {
+  display: flex;
+  background-color: #666;
+  padding: 20px;
+}
+
+.about p {
+  text-align: justify;
+  padding: 10px;
+  flex: 1;
+}
+
+h2 {
+  font-family: "Odibee Sans", cursive;
+  font-size: 40px;
+  text-align: center;
+  color: #ad9d9d;
+}
+
+.content {
+  text-align: center;
+}
+
+/*royal family*/
+
+.royalfam {
+  display: flex;
+  justify-content: space-between;
+}
+
+.royalfam div {
+  flex: 1 1 0;
+}
+
+h3 {
+  padding: 30px;
+  background-color: rgb(163, 33, 33);
+  text-transform: uppercase;
+  border: 2px solid rgb(163, 33, 33);
+  border-radius: 10px;
+}
+
+.font {
+  font-size: 32px;
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+}
+
+#ugly {
+  color: rgb(163, 33, 33);
+  font-family: "Macondo";
+}
+
+/*royal's asets*/
+.assetscontent {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+table {
+  text-align: center;
+  justify-content: center;
+  border: 2px solid bisque;
+}
+
+thead th {
+  color: green;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+th {
+  background-color: white;
+  padding: 20px;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+}
+tbody {
+  color: white;
+}
+
+td {
+  background-color: rgb(63, 56, 56);
+  padding: 10px;
+  text-align: left;
+}
+.opacity td {
+  opacity: 0.8;
+}
+
+.perdu td {
+  background-color: rgb(163, 33, 33);
+}
+
+.hidenseek .opacity {
+  opacity: 0.8;
+}
+
+.hidenseek th {
+  padding: 10px;
+}
+
+tfoot td {
+  border: 10px solid rgb(168, 168, 168);
+  border-radius: 20px;
+  background-color: rgb(204, 182, 58);
+  text-align: center;
+}
+
+/*contact us*/
+
+.contenttournois {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+  font-family: "Luxurious Roman", cursive;
+}
+
+.contenttournois p {
+  width: 80%;
+}
+
+.note {
+  text-align: right;
+  font-family: "Gloria Hallelujah", cursive;
+  font-style: italic;
+  font-size: 12px;
+}
+
+hr {
+  width: 40%;
+  height: 2px;
+  margin: 2% auto;
+  background-color: white;
+}
+
+#contactForm {
+  background-color: grey;
+  padding: 30px;
+  border: 10px ridge rgb(162, 255, 112);
+  border-radius: 20px;
+}
+
+label {
+  font-family: "Caveat", cursive;
+  font-size: 18px;
+}
+
+input,
+textarea {
+  font: 14px sans-serif;
+  color: white;
+  width: 300px;
+  height: 30px;
+  margin: 10px auto;
+  border: 3px solid rgb(162, 255, 112);
+  background-color: rgba(95, 95, 95, 0.7);
+}
+
+button {
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 30px 50px;
+  margin: 10px 4px;
+  border: 1px solid white;
+  border-radius: 30px;
+  cursor: pointer;
+  background: linear-gradient(to right, rgb(162, 255, 112) 50%, #312450 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: 2s;
+}
+
+button:hover {
+  color: rgb(95, 95, 95);
+  transform: scaleX(1.2) scaleY(1.4);
+  transform-origin: left;
+  background-position: left;
+}
+
+/*media navbar*/
+@media screen and (max-width: 612px) {
+  header,
+  header ul,
   .about {
     display: flex;
-    background-color: #666;
-    padding: 20px;
+    flex-direction: column;
     text-align: center;
   }
-  
-  .about p {
-    text-align: justify;
-    padding: 10px;
+  h1,
+  h2,
+  .font,
+  h4 {
+    font-size: 25px;
   }
-  
-  h2 {
-    font-family: "Odibee Sans", cursive;
-    font-size: 40px;
-    text-align: center;
-    color: #ad9d9d;
-  }
-  
-  .content {
-    text-align: center;
-  }
-  
-  /*royal family*/
-  
+}
+
+/*media royal family*/
+@media screen and (max-width: 1020px) {
   .royalfam {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
   }
-  
-  .royalfam div {
-    flex: 1 1 0;
+}
+@media screen and (max-width: 370px) {
+  .royalfam img {
+    width: 200px;
+    height: 200px;
   }
-  
-  h3 {
-    padding: 30px;
-    background-color: rgb(163, 33, 33);
-    text-transform: uppercase;
-    border: 2px solid rgb(163, 33, 33);
-    border-radius: 10px;
-  }
-  
-  .font {
-    font-size: 32px;
-    color: white;
-    font-family: "Times New Roman", Times, serif;
-  }
-  
-  #ugly {
-    color: rgb(163, 33, 33);
-    font-family: "Macondo";
-  }
-  
-  /*royal's asets*/
+}
+
+/*media des assets*/
+
+@media screen and (max-width: 1400px) {
   .assetscontent {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column-reverse;
   }
-  table {
-    text-align: center;
-    justify-content: center;
-    border: 2px solid bisque;
-  }
-  
+}
+
+@media screen and (max-width: 534px) {
   thead th {
-    color: green;
-    text-transform: uppercase;
+    font-size: 15px;
   }
-  
+
   th {
-    background-color: white;
-    padding: 20px;
-    color: rgb(0, 0, 0);
-    text-transform: uppercase;
+    padding: 10px;
+    font-size: 10px;
   }
-  tbody {
-    color: white;
-  }
-  
+
   td {
-    background-color: rgb(63, 56, 56);
-    padding: 10px;
-    text-align: left;
+    padding: 5px;
+    font-size: 10px;
   }
-  .opacity td {
-    opacity: 0.8;
-  }
-  
-  .perdu td {
-    background-color: rgb(163, 33, 33);
-  }
-  
-  .hidenseek .opacity {
-    opacity: 0.4;
-  }
-  
+
   .hidenseek th {
-    padding: 10px;
+    padding: 5px;
   }
-  
+}
+
+/*media contact us*/
+@media screen and (max-width: 600px) {
+  .contenttournois {
+    font-size: 16px;
+  }
+
+  label {
+    font-size: 16px;
+  }
+
+  input,
+  textarea {
+    width: 80%;
+  }
+  button:hover {
+    transform: scaleX(1) scaleY(1);
+  }
+  button {
+    padding: 3% 5%;
+    margin: 5% 5%;
+  }
+}
+
+
+/*haut droit bas gauche
+1 : applique le même écart aux 4 côtés.
+2 : 1er haut et en bas, 2ième droite et gauche.
+3 : 1er écart en haut, 2ième à droite et à gauche, 3ième en bas.
+4 : Haut Droit Bas Gauche
