@@ -102,6 +102,9 @@ h2 {
 .royalfam div {
   flex: 1 1 0;
 }
+.royalfam div p {
+  margin: 5%;
+}
 
 h3 {
   padding: 30px;
