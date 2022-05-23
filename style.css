@@ -7,13 +7,13 @@ body {
 }
 
 header {
-  background-color:#232f34;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  background-color: #232f34;
 }
 
-header img{
+header img {
   margin-top: 10px;
   margin-left: 10px;
 }
@@ -34,36 +34,40 @@ ul li {
 }
 
 ul li a {
+  color: white;
   text-decoration: none;
   text-transform: uppercase;
-  color: white;
 }
+
 ul li a:hover {
-  color: #F9AA33;
+  color: #f9aa33;
 }
+
 ul li a:active {
-  color: #4A6572;
+  color: #4a6572;
 }
 
 /*home*/
 
 .hero {
-  margin-top: 10px;
   background-image: url("assets/royaume.jpg");
   background-size: cover;
   background-position: 50% 50%;
+  margin-top: 10px;
   height: 600px;
 }
 
 h1 {
-  text-align: center;
-  text-transform: uppercase;
+  color: #4a6572;
   font-family: "Odibee Sans", cursive;
   font-size: 45px;
-  color: #4A6572;
   text-shadow: 1px 1px #000;
+  text-align: center;
   margin: 20px;
+}
 
+.uper {
+  text-transform: uppercase;
 }
 
 .about {
@@ -74,18 +78,9 @@ h1 {
 }
 
 .about p {
+  flex: 1;
   text-align: justify;
   padding: 10px;
-  flex: 1;
-}
-
-h2 {
-  font-family: "Odibee Sans", cursive;
-  font-size: 45px;
-  text-align: center;
-  color: #4A6572;
-  text-shadow: 1px 1px #000;
-  margin: 20px;
 }
 
 .content {
@@ -102,20 +97,25 @@ h2 {
 .royalfam div {
   flex: 1 1 0;
 }
+
 .royalfam div p {
   margin: 5%;
 }
 
-h3 {
-  padding: 30px;
-  background-color: #4A6572;
-  border: 2px solid #4A6572;
-  text-transform: uppercase;
+h2 {
+  background-color: #4a6572;
+  border: 2px solid #4a6572;
   border-radius: 10px;
+  font-size: 45px;
+  text-transform: uppercase;
+  padding: 30px;
+}
+
+.royalfam p {
+  font-size: 35px;
 }
 
 .font {
-  font-size: 32px;
   color: white;
   font-family: "Times New Roman", Times, serif;
 }
@@ -126,15 +126,17 @@ h3 {
 }
 
 /*royal's asets*/
+
 .assetscontent {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
+
 table {
   text-align: center;
   justify-content: center;
-  border: 2px solid #F9AA33;
+  border: 2px solid #f9aa33;
 }
 
 thead th {
@@ -145,19 +147,21 @@ thead th {
 
 th {
   background-color: whitesmoke;
-  padding: 20px;
   color: rgb(0, 0, 0);
   text-transform: uppercase;
+  padding: 20px;
 }
+
 tbody {
   color: white;
 }
 
 td {
   background-color: rgb(63, 56, 56);
-  padding: 10px;
   text-align: left;
+  padding: 10px;
 }
+
 .opacity td {
   opacity: 0.8;
 }
@@ -177,8 +181,8 @@ td {
 tfoot td {
   border: 5px solid rgb(168, 168, 168);
   border-radius: 20px;
+  color: #f9aa33;
   text-align: center;
-  color: #F9AA33;
 }
 
 /*contact us*/
@@ -188,7 +192,6 @@ tfoot td {
   flex-direction: column;
   align-items: center;
   text-align: justify;
-  font-family: "Luxurious Roman", cursive;
 }
 
 .contenttournois p {
@@ -196,25 +199,25 @@ tfoot td {
 }
 
 .note {
-  text-align: right;
   font-family: "Gloria Hallelujah", cursive;
-  font-style: italic;
   font-size: 12px;
+  text-align: right;
+  font-style: italic;
 }
 
 hr {
+  background-color: white;
   width: 40%;
   height: 2px;
   margin: 2% auto;
-  background-color: white;
 }
 
 #contactForm {
   background-color: grey;
+  border: 5px ridge #4a6572;
+  border-radius: 20px;
   padding: 30px;
   margin: 2%;
-  border: 5px ridge #4A6572;
-  border-radius: 20px;
 }
 
 label {
@@ -224,33 +227,33 @@ label {
 
 input,
 textarea {
+  background-color: #4a6572;
+  border: 3px solid #4a6572;
   font: 14px sans-serif;
   color: white;
   width: 300px;
   height: 30px;
   margin: 10px auto;
-  border: 3px solid #4A6572;
-  background-color: #4A6572;
 }
 
-#situation{
+#situation {
   width: 80%;
   height: 100px;
 }
 
 button {
-  color: white;
-  font-weight: bold;
-  text-transform: uppercase;
-  padding: 20px 20px;
-  margin: 0 4%;
-  border: 1px solid white;
-  border-radius: 30px;
-  cursor: pointer;
-  background: linear-gradient(to right, #F9AA33 50%, #232F34 50%);
+  background: linear-gradient(to right, #f9aa33 50%, #232f34 50%);
   background-size: 200% 100%;
   background-position: right bottom;
   transition: 2s;
+  color: white;
+  border: 1px solid white;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 30px;
+  padding: 20px 20px;
+  margin: 0 4%;
+  cursor: pointer;
 }
 
 button:hover {
@@ -259,12 +262,12 @@ button:hover {
   background-position: left;
 }
 
-.valider{
+.valider {
   text-align: right;
 }
 
+/*media queries navbar*/
 
-/*media navbar*/
 @media screen and (max-width: 612px) {
   header,
   header ul,
@@ -281,13 +284,18 @@ button:hover {
   }
 }
 
-/*media royal family*/
+/*media queries royal family*/
+
 @media screen and (max-width: 1020px) {
   .royalfam {
     display: flex;
     flex-direction: column;
   }
+  .royalfam p {
+    font-size: 20px;
+  }
 }
+
 @media screen and (max-width: 370px) {
   .royalfam img {
     width: 200px;
@@ -295,7 +303,7 @@ button:hover {
   }
 }
 
-/*media des assets*/
+/*media queries des assets*/
 
 @media screen and (max-width: 1400px) {
   .assetscontent {
@@ -310,13 +318,13 @@ button:hover {
   }
 
   th {
-    padding: 10px;
     font-size: 10px;
+    padding: 10px;
   }
 
   td {
-    padding: 5px;
     font-size: 10px;
+    padding: 5px;
   }
 
   .hidenseek th {
@@ -324,7 +332,8 @@ button:hover {
   }
 }
 
-/*media contact us*/
+/*media queries contact us*/
+
 @media screen and (max-width: 600px) {
   .contenttournois {
     font-size: 16px;
@@ -345,14 +354,7 @@ button:hover {
     padding: 3% 5%;
     margin: 5% 5%;
   }
-  hr{
+  hr {
     margin: 5% auto;
   }
 }
-
-
-/*haut droit bas gauche
-1 : applique le même écart aux 4 côtés.
-2 : 1er haut et en bas, 2ième droite et gauche.
-3 : 1er écart en haut, 2ième à droite et à gauche, 3ième en bas.
-4 : Haut Droit Bas Gauche
